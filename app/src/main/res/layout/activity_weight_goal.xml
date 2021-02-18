@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fitbitwhite"
+    tools:context=".user.WeightGoalActivity">
+
+    <TextView
+        android:id="@+id/goalID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/fitbitGreen"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/what_is_your_weight_goal"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goalID">
+
+        <RadioButton
+            android:id="@+id/loss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/lose_weight"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="25dp"
+            android:textSize="24sp"/>
+
+        <RadioButton
+            android:id="@+id/maintain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/maintain_weight"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:textSize="24sp"/>
+
+        <RadioButton
+            android:id="@+id/gain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/gain_weight"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:textSize="24sp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/activityLevelID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="32dp"
+        android:gravity="center"
+        android:textColor="@color/fitbitGreen"
+        android:text="@string/what_is_your_current_activity_level"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityLevelID">
+
+        <RadioButton
+            android:id="@+id/sedentary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked2"
+            android:text="@string/if_you_are_sedentary_little_or_no_exercise"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:textSize="17sp"
+            />
+
+        <RadioButton
+            android:id="@+id/lightActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked2"
+            android:text="@string/if_you_are_lightly_active_light_exercise_sports_1_3_days_week"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:textSize="17sp"/>
+
+        <RadioButton
+            android:id="@+id/moderateActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked2"
+            android:text="@string/if_you_are_moderately_active_moderate_exercise_sports_3_5_days_week"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:textSize="17sp"/>
+
+        <RadioButton
+            android:id="@+id/veryActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked2"
+            android:text="@string/if_you_are_very_active_hard_exercise_sports_6_7_days_a_week"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:textSize="17sp"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextPgGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/next"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup"
+    android:layout_width="350dp"
+    android:layout_height="300dp"
+    android:background="@drawable/btn_shape">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    android:id="@+id/constraintCongrats">
+
+    <ImageView
+        android:id="@+id/crown"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/crown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/popupCongrats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/great_last_workout"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/crown"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/popupTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Your Recommended Ranges"
+        android:textColor="#FFF"
+        android:textSize="17sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintCongrats" />
+
+
+    <TextView
+        android:id="@+id/popupCalsMin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popupTextView"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:text="Min Cals"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popupTextView" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/popupCalsMax"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/popupTextView"-->
+<!--        android:layout_marginStart="50dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:text="Max Cals"-->
+<!--        android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/popupTextView" />-->
+
+
+    <TextView
+        android:id="@+id/popupCarbsMin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popupCalsMin"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:text="Min Carbs"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popupCalsMin" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/popupCarbsMax"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/popupCalsMax"-->
+<!--        android:layout_marginStart="100dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:text="Max Carbs"-->
+<!--        android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--        app:layout_constraintStart_toStartOf="@id/popupCarbsMin"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/popupCalsMax" />-->
+
+    <TextView
+        android:id="@+id/popupProteinMin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popupCarbsMin"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:text="Min Protein"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popupCarbsMin" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/popupProteinMax"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/popupCarbsMax"-->
+<!--        android:layout_marginStart="120dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:text="Max Protein"-->
+<!--        android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--        app:layout_constraintStart_toStartOf="@id/popupProteinMin"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/popupCarbsMax" />-->
+
+
+    <TextView
+        android:id="@+id/popupFatMin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popupProteinMin"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:text="Min Fat"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popupProteinMin" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/popupFatMax"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/popupProteinMax"-->
+<!--        android:layout_marginStart="100dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:text="Max Fat"-->
+<!--        android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--        app:layout_constraintStart_toStartOf="@id/popupFatMin"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/popupProteinMax" />-->
+
+    <Button
+        android:id="@+id/closepopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_shape"
+        android:text="@string/close"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

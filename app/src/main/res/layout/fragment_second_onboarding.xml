@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboarding.SecondOnboarding"
+    android:padding="16dp"
+    android:background="@drawable/fitbitwhite"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:src="@drawable/macronutrient_breakdown"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/need_replenishing"
+        android:textColor="@color/fitbitGreen"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="17sp"
+        android:fontFamily="monospace"
+        android:text="@string/we_then_use_that_value_to_work_out_the_best_macro_nutrient_breakdown_based_on_your_goals"
+        android:textColor="@color/black" />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/slideTwoBack"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom|start"-->
+<!--            android:layout_weight="1"-->
+<!--            android:textColor="@color/colorPrimary"-->
+<!--            android:text="@string/back"-->
+<!--            android:textSize="20sp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/slideTwoNext"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom|end"-->
+<!--            android:textColor="@color/colorPrimary"-->
+<!--            android:gravity="bottom|end"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="@string/next"-->
+<!--            android:textSize="20sp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"/>-->
+
+<!--    </LinearLayout>-->
+
+</LinearLayout>

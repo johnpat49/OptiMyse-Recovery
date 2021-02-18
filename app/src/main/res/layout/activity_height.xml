@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fitbitwhite"
+    tools:context=".user.HeightActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        app:layout_constraintLeft_toRightOf="@+id/inputHeightFt"
+        android:text="@string/ft"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/whatHeightID"
+        tools:layout_editor_absoluteX="76dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/inch"
+        android:textSize="18sp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whatHeightID" />
+
+    <TextView
+        android:id="@+id/whatHeightID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/fitbitGreen"
+        android:text="@string/enter_your_height"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_your_weight"
+        android:textColor="@color/fitbitGreen"
+        android:layout_marginStart="20dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputHeightFt"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/e_g_6"
+        android:textColor="#000"
+        android:inputType="number"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whatHeightID"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <EditText
+        android:id="@+id/inputHeightInch"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/e_g_0"
+        android:textColor="#000"
+        android:inputType="number"
+        android:layout_marginTop="45dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/whatHeightID"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <TextView
+        android:id="@+id/kgID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kgs"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_marginStart="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:layout_marginTop="56dp"/>
+
+    <EditText
+        android:id="@+id/inputKgs"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/_75"
+        android:textColor="#000"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="433dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="45dp"
+        />
+
+    <Button
+        android:id="@+id/nextPgId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_shape"
+        android:textColor="#FFF"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
